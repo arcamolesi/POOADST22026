@@ -22,4 +22,10 @@ int main () {
 
   func1.setSalario(10001);
   cout << "Salario func1: " << func1.getSalario() << endl;
+
+  func1.setSalario(4000);
+  cout << "Salario func1: " << func1.getSalario() << endl;
+
+  func1.setSalario(200);
+  cout << "Salario func1: " << func1.getSalario() << endl;
 }

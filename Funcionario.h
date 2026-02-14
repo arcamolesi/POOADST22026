@@ -39,10 +39,9 @@ void Funcionario::ler(){ //corpo do método ler()
    cout << "\nLeitura Dados Funcionario\n";
    cout << "Informe ID: ";
    cin >> id;
-   fflush(stdin);
+   cin.ignore();
    cout << "Informe Nome: ";
-   //getline (cin, nome);
-   cin >> nome;
+   getline (cin, nome);  //cin >> nome;
    cout << "Informe Salario: ";
    cin >> salario;
 }
