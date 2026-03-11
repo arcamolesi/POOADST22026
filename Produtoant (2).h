@@ -12,7 +12,6 @@ class Produto{
       Produto(int, string, Categoria, float, float);
 
       void imprimir();
-
 };
 
 Produto::Produto(){
@@ -31,20 +30,14 @@ Produto::Produto(int id, string desc, Categoria cat, float qtde, float val){
     this->valor = val;
 }
 
-
-
-
 void Produto::imprimir(){
    cout << "\nImprimir Produto\n";
    cout << "ID Produto: " << this->id << endl;
-   cout << "Descricao Produto: " << this->descricao << endl;
-   cout << "ID Categoria: " << this->categoria.getId() << endl;
-   cout << "Descricao Categoria: " << this->categoria.getDescricao() << endl;
+   cout << "Descricao: Produto: " << this->descricao << endl;
+   cout << "ID Categoria: " << this->categoria.getId()<< endl;
+   cout << "Descricao Cat: " << this->categoria.getDescricao() << endl;
    cout << "Quantidade: " << this->qtde << endl;
    cout << "Valor: " << this->valor << endl;
 }
-
-
-
 
 
