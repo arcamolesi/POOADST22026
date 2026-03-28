@@ -1,4 +1,7 @@
 //Func.h
+#include <iostream>
+using namespace std;
+
 class Funcionario: public Cargo {
    private:
        int id;
@@ -35,7 +38,9 @@ class Funcionario: public Cargo {
           cout << "Nome: " << this->nome << endl;
           cout << "Cargo: " << Cargo::id << " - " << Cargo::cargo << endl;
           cout << "Salario: " << this->salario << endl;
-
        }
+
+
+
 
 };

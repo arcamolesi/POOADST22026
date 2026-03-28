@@ -1,4 +1,7 @@
 //Cargo.h
+#include <iostream>
+using namespace std;
+
 class Cargo{
     protected:
        int id;

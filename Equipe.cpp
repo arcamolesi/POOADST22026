@@ -8,7 +8,7 @@ int main(){
     Cargo c1;
     c1.imprimir();
 
-    Cargo c2 (3, "Professor");
+    Cargo c2 ;//(3, "Professor");
     c2.imprimir();
 
     cout << "\nImprimir Funcionarios\n";
@@ -25,8 +25,8 @@ int main(){
     f2.imprimir();
 
     cout << "\nInfome o percentual de aumento: ";
-    int percent;
-    cin >> percent;
+    int percent=50;
+    //cin >> percent;
     //f2.aumentoPorPercentual(percent);
     f2.aumento(percent);
     f2.imprimir();
@@ -35,7 +35,7 @@ int main(){
     f2.aumento((float)3000);
     f2.imprimir();
 
-
 }
+
 
 
