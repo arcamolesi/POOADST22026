@@ -3,7 +3,7 @@
 using namespace std;
 
 #ifndef CARGO_H
-  #include "Cargo.h"
+    #include "Cargo.h"
 #endif // CARGO_H
 
 #ifndef FUNC_H
@@ -14,42 +14,40 @@ using namespace std;
    #define FUNCOES_H
 #endif // FUNCOES_H
 
+void lerFuncionario(Funcionario &func){
+    cout << "\nLer Funcionario\n";
+    int idFunc, idCargo;
+    string nome, cargo;
+    float salario;
+    cout << "ID: ";
+    cin >> idFunc;
 
-//função para ler funcionario, não pertence a classe Funcionario
-void lerFuncionario(Funcionario &func) {
-   int idFunc, idCargo;
-   string nome, cargo;
-   float salario;
+    cout << "Nome: ";
+    cin.ignore();
+    getline(cin, nome);
 
-   cout << "\nLeitura de Funcionario\n";
-   cout << "ID Func: ";
-   cin >> idFunc;
-   func.setId(idFunc);
+    cout << "ID Cargo: ";
+    cin >> idCargo;
 
-   cout << "Nome: ";
-   cin.ignore();
-   cin >> nome;
-   func.setNome(nome);
+    cout << "Cargo: ";
+    cin.ignore();
+    getline(cin, cargo);
 
-   cout << "Salario: ";
-   cin >> salario;
-   func.setSalario(salario);
+    cout << "Salario: ";
+    cin >> salario;
 
-   cout << "ID Cargo: ";
-   cin >> idCargo;
-   func.Cargo::setId(idCargo);
-
-   cout << "Cargo: ";
-   cin.ignore();
-   cin >> cargo;
-   func.setCargo(cargo);
-
+    func.setId(idFunc);
+    func.setNome(nome);
+    func.Cargo::setId(idCargo);
+    func.setCargo(cargo);
+    func.setSalario(salario);
 }
 
- void imprimirFuncionario(Funcionario func){
+
+void imprimirFuncionario(Funcionario func){
     cout << "\nImprimir Funcionario\n";
     cout << "ID Funcionario: " << func.getId() << endl;
     cout << "Nome: " << func.getNome() << endl;
-    cout << "Cargo: " << func.Cargo::getId() << " - " << func.getCargo() << endl;
+    cout << "Cargo: " << func.Cargo::getId() << " - " << func.Cargo::getCargo()<< endl;
     cout << "Salario: " << func.getSalario() << endl;
 }

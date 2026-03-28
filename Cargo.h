@@ -2,6 +2,11 @@
 #include <iostream>
 using namespace std;
 
+#ifndef CARGO_H
+   #define CARGO_H
+#endif // CARGO_H
+
+
 class Cargo{
     protected:
        int id;
